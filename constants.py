@@ -1,11 +1,16 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 ACCOUNT_ID_1 = "101-003-25725464-001"
 ACCOUNT_ID_2 = "101-003-25725464-002"
 ACCOUNT_ID_3 = "101-003-25725464-003"
 ACCOUNT_ID_4 = "101-003-25725464-004"
-LIVE_ACCOUNT_ID = ""
+LIVE_ACCOUNT_ID = os.getenv("LIVE_ACCOUNT_ID", "")
 
-PRACTICE_ACCESS_TOKEN = ""
-LIVE_ACCESS_TOKEN = ""
+PRACTICE_ACCESS_TOKEN = os.getenv("PRACTICE_ACCESS_TOKEN", "")
+LIVE_ACCESS_TOKEN = os.getenv("LIVE_ACCESS_TOKEN", "")
 
 LIVE_HEADERS = {"Authorization": f"Bearer {LIVE_ACCESS_TOKEN}", "Content-Type": "application/json"}
 PRACTICE_HEADERS = {"Authorization": f"Bearer {PRACTICE_ACCESS_TOKEN}", "Content-Type": "application/json"}

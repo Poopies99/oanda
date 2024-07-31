@@ -1,0 +1,12 @@
+langchain
+langchain-core
+langchain-openai
+langgraph
+langchain-community
+python-dotenv
+rich
+pandas
+matplotlib
+mplfinance
+plotly
+bokeh
