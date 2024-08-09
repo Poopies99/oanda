@@ -6,8 +6,12 @@ langchain-community
 python-dotenv
 rich
 pandas
+numpy
+scipy
+scikit-learn
 matplotlib
 mplfinance
 plotly
 bokeh
 lumibot
+ta-lib
